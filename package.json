@@ -1,0 +1,28 @@
+{
+  "name": "softskills",
+  "version": "1.0.0",
+  "description": "Playable static prototype based on the onboarding and scenario PDFs.",
+  "main": "game.js",
+  "scripts": {
+    "serve": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "teaser:capture": "node teaser/capture-gameplay.mjs",
+    "teaser:render": "python3 teaser/render-teaser.py",
+    "teaser:audio": "python3 teaser/upgrade-audio.py",
+    "teaser:audio:no-voice": "python3 teaser/mux-no-voice.py",
+    "teaser:build": "npm run teaser:capture && npm run teaser:render && npm run teaser:audio:no-voice"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/METHEZONE/softskills.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/METHEZONE/softskills/issues"
+  },
+  "homepage": "https://github.com/METHEZONE/softskills#readme",
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}

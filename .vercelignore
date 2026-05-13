@@ -1,0 +1,14 @@
+.git
+.DS_Store
+.omc
+.omx
+*.pdf
+*.zip
+assets/vendor/**/*.zip
+assets/vendor/**/__MACOSX
+assets/vendor/**/._*
+assets/vendor/**/*.psd
+node_modules
+package.json
+package-lock.json
+TEASER_VIDEO_PLAN.md
